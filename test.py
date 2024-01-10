@@ -39,4 +39,6 @@ logoutput.pack(expand=True, fill=tk.BOTH)
 
 for i in range(100):
     logoutput.insert(tk.END, str(datetime.now()) + f": init {i}\n")
+    # logoutput.yview(tk.END)
+    logoutput.see(tk.END)
 root.mainloop()

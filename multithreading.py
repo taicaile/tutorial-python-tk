@@ -23,6 +23,7 @@ class MainWindow(tk.Tk):
         self.queue_message = Queue()
         self.create_frame_buttons().pack(expand=True)
         self.bind("<<CheckQueue>>", self.check_queue)
+        self.periodic_task()
 
     def create_frame_buttons(self):
         """
@@ -72,6 +73,10 @@ class MainWindow(tk.Tk):
         msg = self.queue_message.get()
         if msg.ticket_type == TicketPurpose.UPDATE_PROGRESS_TEXT:
             self.lbl_status.configure(text=msg.ticket_value)
+
+    def periodic_task(self):
+        print(time.time())
+        self.after(1000, self.periodic_task)
 
 
 if __name__ == "__main__":

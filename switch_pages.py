@@ -1,3 +1,7 @@
+"""
+Switch Pages in Tkinter, reference: https://www.youtube.com/watch?v=95tJO7XJlko
+"""
+
 import tkinter as tk
 
 root = tk.Tk()
@@ -18,12 +22,12 @@ def home_page():
     home_frame.pack(pady=20)
 
 
-
 def menu_page():
     home_frame = tk.Frame(page_frame)
     label = tk.Label(home_frame, text="Menu Page\n\n page 2", font=("bold", 30))
     label.pack()
     home_frame.pack(pady=20)
+
 
 def contact_page():
     home_frame = tk.Frame(page_frame)
@@ -31,11 +35,13 @@ def contact_page():
     label.pack()
     home_frame.pack(pady=20)
 
+
 def about_page():
     home_frame = tk.Frame(page_frame)
     label = tk.Label(home_frame, text="About Page\n\n page 4", font=("bold", 30))
     label.pack()
     home_frame.pack(pady=20)
+
 
 home_btn = tk.Button(
     options_frame,

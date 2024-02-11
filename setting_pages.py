@@ -150,12 +150,29 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("640x480")
 
-    settings = SettingsView(root, relief="flat")  #
+    style = ttk.Style()
+    style.configure("Treeview.Heading", relief="flat", background="white")
+    style.configure("Treeview", rowheight=28)
+    style.map(
+        "Treeview",
+        foreground=[("selected", "darkgreen")],
+        background=[("selected", "lightgreen")],
+    )
+    style.configure("TLabel", font=("tkDefaultFont", 18))
+
+    settings = SettingsView(root, relief="flat")
+
     settings.add_page(
-        image_path="language.png", setting_name="Language", page=LangagePage
+        image_path="language.png",
+        setting_name="  Language",
+        page=LangagePage,
     )
 
-    settings.add_page(image_path="audio.png", setting_name="Audio", page=AudioPage)
+    settings.add_page(
+        image_path="audio.png",
+        setting_name="  Audio",
+        page=AudioPage,
+    )
 
     settings.pack(fill=tk.BOTH, expand=True)
 

@@ -26,3 +26,5 @@ The complete guide to Tkinter by Atlas,
 Others
 
 - <https://github.com/codefirstio/tkinter-data-entry/tree/main>
+
+- <https://www.youtube.com/@tkinterhub/playlists>

@@ -13,17 +13,14 @@ from tkinter import ttk
 
 ## Tutorial Reference
 
-Tkinter Snippets by JobinPy
+Tkinter Snippets by JobinPy,
 
 - <https://www.youtube.com/playlist?list=PLd1leK7rsaC_JaF8bC4Knn1OHVm9zqJSJ>
 
-Using Tkinter with classes
-
-- <https://www.youtube.com/watch?v=eaxPK9VIkFM>
-
-The complete guide to Tkinter
+The complete guide to Tkinter by Atlas,
 
 <https://www.youtube.com/playlist?list=PLpMixYKO4EXeaGnqT_YWx7_mA77bz2VqM>
+
 <https://github.com/clear-code-projects/tkinter-complete/tree/main>
 
 Others
